@@ -1,12 +1,14 @@
-package de.schauderhaft.doodle
+package de.schauderhaft.doodle.finn
 
-class DemoDoodle5 extends Doodle {
+import de.schauderhaft.doodle.Doodly
+
+object Finn5 extends Doodly {
 
     def gehen = move
 
     def drehen = turn
 
-    def hut(n : Int) {
+    def hut(n: Int) {
         if (n == 0) {
             gehen
         } else {
@@ -48,7 +50,7 @@ class DemoDoodle5 extends Doodle {
             drehen
             hut(n - 1)
             hut(n - 1)
-            drehen 
+            drehen
             hut(n - 1)
             drehen
             hut(n - 1)
@@ -59,11 +61,10 @@ class DemoDoodle5 extends Doodle {
             hut(n - 1)
         }
     }
-    
-    
+
     drehen
-    drehen 
-    
+    drehen
+
     hut(3)
 
 }

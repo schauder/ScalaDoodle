@@ -1,6 +1,6 @@
 package de.schauderhaft.doodle
 
-class DemoDoodle extends Doodle {
+object DemoDoodle extends Doodly {
 
     def g = move
 
